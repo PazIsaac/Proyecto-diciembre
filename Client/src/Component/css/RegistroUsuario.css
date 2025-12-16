@@ -1,0 +1,158 @@
+.registro {
+  min-height: 100vh;
+  padding: 64px 0;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.registro-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.registro-header h1 {
+  font-size: 48px;
+  color: #2c3e50;
+  margin-bottom: 16px;
+}
+
+.registro-header p {
+  font-size: 19px;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.registro-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 64px;
+}
+
+.registro-info {
+  background: white;
+  border: rgb(25, 130, 25) solid 2px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.registro-info h2 {
+  color: #2c3e50;
+  margin-bottom: 32px;
+  font-size: 29px;
+}
+
+.registro-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.registro-info li {
+  padding: 13px 0;
+  color: #6c757d;
+  font-size: 18px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.registro-info li:last-child {
+  border-bottom: none;
+}
+
+.registro-form {
+  background: white;
+  border: rgb(25, 130, 25) solid 2px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2E8B57;
+}
+
+.form-group input.error,
+.form-group select.error {
+  border-color: #e74c3c;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+}
+
+.submit-btn:hover {
+  background: #27AE60;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .registro-header h1 {
+    font-size: 32px;
+  }
+
+  .registro-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .registro-info,
+  .registro-form {
+    padding: 32px;
+  }
+}
